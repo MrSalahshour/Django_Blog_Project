@@ -1,0 +1,27 @@
+from base_model import BaseAdvertiser
+from advertiser import Advertiser
+from ad import Ad
+
+# baseAdvertising = BaseAdvertiser()
+advertiser1 = Advertiser("name1")
+advertiser2 = Advertiser("name2")
+ad1 = Ad("title1", "img_url1", "link1", advertiser1)
+ad2 = Ad("title2", "img_url2", "link2", advertiser2)
+# baseAdvertising.describe_me()
+ad2.describe_me()
+advertiser1.describe_me()
+ad1.inc_views()
+ad1.inc_views()
+ad1.inc_views()
+ad1.inc_views()
+ad2.inc_views()
+ad1.inc_clicks()
+ad1.inc_clicks()
+ad2.inc_clicks()
+advertiser2.get_name()
+advertiser2.set_name("new_name")
+advertiser2.get_name()
+ad1.get_click()
+advertiser2.get_click()
+Advertiser.get_total_clicks()
+Advertiser.help()
